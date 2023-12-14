@@ -31,6 +31,7 @@ const shader = new THREE.ShaderMaterial({
  uniforms: {
   uTime: { value: 0 },
   uMouse: { value: new THREE.Vector2(0, 0) },
+  uResolution: { value: new THREE.Vector4() },
  },
  transparent: true,
  wireframe: false,

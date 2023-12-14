@@ -1,11 +1,7 @@
-uniform vec3 uDepthColor;
-uniform vec3 uSurfaceColor;
-
-varying float vWaveElevation;
+varying vec2 vUv;
 
 void main()
 {
- vec3 color = mix(uDepthColor , uSurfaceColor, vWaveElevation);
- gl_FragColor = vec4(color, 1.0);
- #include <colorspace_fragment>
+ gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
+ // #include <colorspace_fragment>
 }
